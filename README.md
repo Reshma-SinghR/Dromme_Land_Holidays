@@ -1,2 +1,88 @@
-# Dromme_Land_Holidays
-My Own Travel Company Website
+🌍 Dromme Land Holidays – Travel Company Website
+
+A modern, responsive travel agency website designed to showcase tour packages, services, and online enquiry options. This project reflects my practical experience in website development and front-end customization using HTML, CSS, JavaScript, and Bootstrap.
+
+🧾 Project Description
+
+Dromme Land Holidays is a fully functional travel company website built to provide users with curated travel packages, flight/hotel booking information, visa services, and contact options. The UI is clean, mobile-friendly, and optimized for GitHub Pages deployment.
+
+This project demonstrates my ability to:
+
+Customize HTML templates professionally
+
+Optimize UI for real travel company usage
+
+Manage project structure and GitHub deployment
+
+Apply branding and color consistency across components
+
+Implement animations, hero sections, destination grids, galleries, and enquiry forms
+
+🚀 Live Demo
+
+Hosted on GitHub Pages
+🔗 https://reshma-singhr.github.io/Dromme_Land_Holidays/
+
+📌 Key Features
+
+✔️ Fully responsive travel website
+✔️ Kerala & India tour packages
+✔️ Image gallery & destination highlights
+✔️ Flight, hotel, visa & travel services
+✔️ Smooth animations and clean UI
+✔️ Enquiry form layout (static front-end)
+✔️ Fast loading & lightweight
+✔️ SEO-friendly structure
+
+🛠️ Technologies Used
+
+HTML5
+CSS3 / Bootstrap 5
+JavaScript
+WOW.js Animations
+FontAwesome & Icon libraries
+Git & GitHub for version control
+
+📂 Project Structure
+Dromme_Land_Holidays/
+│
+├── index.html
+├── about.html
+├── packages.html
+├── destination.html
+├── service.html
+├── contact.html
+│
+├── css/
+│ └── style.css
+│
+├── js/
+│ └── main.js
+│
+├── img/
+│ └── (all images used in website)
+│
+└── README.md
+
+📸 Branding & Design
+
+Primary theme color: #0b796b
+Clean travel-themed imagery
+Modern gradient-free sections
+Enhanced hero banner with captions
+Professionally aligned page layouts
+
+🎯 Purpose of This Project
+
+This project showcases my ability to develop and customize a full front-end website for real-world usage.
+It is included in my CV/Portfolio to demonstrate:
+
+Front-end development skills
+GitHub project management
+Deployment experience
+Real application design for tourism industry
+
+📬 Contact
+
+Developer: Reshma R Singh
+Project: Dromme Land Holidays Website
