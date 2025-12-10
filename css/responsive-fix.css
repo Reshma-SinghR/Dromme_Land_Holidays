@@ -1,0 +1,144 @@
+/* ============================================================
+   responsive-fix.css  — Add-on Responsive Corrections Only
+   IMPORTANT:
+   - Does NOT modify your design
+   - Loads AFTER style.css
+   - Fixes ONLY mobile/tablet responsive issues
+   ============================================================ */
+
+/* ------------------------------------
+   1) PACKAGES GRID — MOBILE FIX
+------------------------------------ */
+@media (max-width: 576px) {
+  .col-lg-4.col-md-6,
+  .package-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+/* ------------------------------------
+   2) HERO VIDEO — FULL RESPONSIVE FIX
+------------------------------------ */
+@media (max-width: 768px) {
+  .hero-video-section {
+    height: 55vh !important;
+    min-height: 55vh !important;
+    padding: 0 !important;
+  }
+
+  .hero-video-section video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-video-section {
+    height: 45vh !important;
+    min-height: 45vh !important;
+  }
+}
+
+/* ------------------------------------
+   3) PREVENT IMAGE STRETCHING
+------------------------------------ */
+.package-item img,
+.service-item img,
+.destination img,
+.team-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ------------------------------------
+   4) FOOTER ALIGNMENT — MOBILE / TABLET
+------------------------------------ */
+@media (max-width: 768px) {
+  .footer .row > div {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  .footer .footer-menu {
+    text-align: center !important;
+    margin-top: 10px;
+  }
+
+  .footer .footer-menu a {
+    border-right: none !important;
+    margin: 0 10px !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .copyright {
+    text-align: center !important;
+    font-size: 13px !important;
+  }
+}
+
+/* ------------------------------------
+   5) BOOKING FORM — MOBILE FIX
+------------------------------------ */
+@media (max-width: 576px) {
+  .booking .row {
+    display: block !important;
+  }
+
+  .booking .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .booking .form-floating input,
+  .booking .form-floating select,
+  .booking .form-floating textarea {
+    width: 100% !important;
+    height: auto !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* ------------------------------------
+   6) BUTTON SIZE FIX — SMALL DEVICES
+------------------------------------ */
+@media (max-width: 576px) {
+  .btn,
+  button,
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .btn-lg,
+  .btn-lg-square {
+    padding: 12px 18px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* ------------------------------------
+   7) NAVBAR SPACING — MOBILE FIX
+------------------------------------ */
+@media (max-width: 576px) {
+  .navbar-light .navbar-brand img {
+    max-height: 75px !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding: 8px 0 !important;
+    font-size: 15px !important;
+  }
+}

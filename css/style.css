@@ -6,6 +6,12 @@
   --dark: #14141f;
 }
 
+/* Global Responsive Rules */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .fw-medium {
   font-weight: 600 !important;
 }
@@ -46,6 +52,7 @@
 .btn.btn-primary {
   background-color: var(--primary);
 }
+
 .btn.btn-secondary {
   color: #ffffff;
 }
@@ -85,13 +92,17 @@
   font-weight: normal;
   border-radius: 0px;
 }
+
 /* ===== Plane Animation ===== */
 /* ===== Plane Image Style ===== */
 .plane {
   position: absolute;
-  bottom: 15%; /* Start near bottom like runway */
-  left: -25%; /* Start off-screen left */
-  width: 120px; /* Adjust size */
+  bottom: 15%;
+  /* Start near bottom like runway */
+  left: -25%;
+  /* Start off-screen left */
+  width: 120px;
+  /* Adjust size */
   transform: rotate(-5deg);
   animation: takeoff 6s ease-in-out infinite;
   will-change: transform;
@@ -103,15 +114,19 @@
     transform: translateX(0) translateY(0) rotate(-5deg);
     opacity: 1;
   }
+
   25% {
     transform: translateX(25vw) translateY(-5vh) rotate(-3deg);
   }
+
   50% {
     transform: translateX(55vw) translateY(-15vh) rotate(-1deg);
   }
+
   75% {
     transform: translateX(85vw) translateY(-25vh) rotate(0deg);
   }
+
   100% {
     transform: translateX(130vw) translateY(-35vh) rotate(5deg);
     opacity: 0.8;
@@ -218,6 +233,7 @@
     display: none;
   }
 }
+
 /*** demo home loader ***/
 .hero-video-section {
   position: relative;
@@ -250,9 +266,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.35); /* dark overlay */
+  background: rgba(0, 0, 0, 0.35);
+  /* dark overlay */
   z-index: 1;
 }
+
 /*** demo home loader end ***/
 /*** package Header ***/
 /***.bg-video {
@@ -269,33 +287,34 @@
 /*** service Header ***/
 .service-header {
   width: 100%;
-  height: 100vh; /* full viewport height */
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(102, 102, 106, 0.7)
-    ),
+  height: 100vh;
+  /* full viewport height */
+  background: linear-gradient(rgba(255, 255, 255, 0.7),
+      rgba(102, 102, 106, 0.7)),
     url("../img/service.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* optional: gives nice parallax scroll effect */
+  background-attachment: fixed;
+  /* optional: gives nice parallax scroll effect */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /*** aboutus Header ***/
 .aboutus-header {
   width: 100%;
-  height: 100vh; /* full viewport height */
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(102, 102, 106, 0.7)
-    ),
+  height: 100vh;
+  /* full viewport height */
+  background: linear-gradient(rgba(255, 255, 255, 0.7),
+      rgba(102, 102, 106, 0.7)),
     url("../img/about_us.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* optional: gives nice parallax scroll effect */
+  background-attachment: fixed;
+  /* optional: gives nice parallax scroll effect */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,18 +343,21 @@
 /*** Hero package loader Header ***/
 .hero-header {
   width: 100%;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
+  /* full viewport height */
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(20, 20, 31, 0.7)),
     url("../img/bg-hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* optional: gives nice parallax scroll effect */
+  background-attachment: fixed;
+  /* optional: gives nice parallax scroll effect */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.breadcrumb-item + .breadcrumb-item::before {
+
+.breadcrumb-item+.breadcrumb-item::before {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -344,6 +366,7 @@
   position: relative;
   display: inline-block;
   text-transform: uppercase;
+  margin-bottom: .5rem;
 }
 
 .section-title::before {
@@ -377,6 +400,7 @@
   width: calc(100% + 60px);
   left: 0;
 }
+
 /*** Caption ***/
 .highlight-text {
   background: linear-gradient(90deg, #98e4da, #ff9900);
@@ -430,9 +454,11 @@
 .team-card img {
   transition: 0.5s;
 }
+
 .team-card:hover img {
   transform: scale(1.1);
 }
+
 .overlay {
   position: absolute;
   bottom: 0;
@@ -447,6 +473,7 @@
   padding: 20px;
   transition: 0.5s;
 }
+
 .team-card:hover .overlay {
   opacity: 1;
 }
@@ -495,11 +522,9 @@
   left: 0;
   height: 100%;
   width: 0;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
@@ -510,15 +535,14 @@
   right: 0;
   height: 100%;
   width: 0;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
 @media (min-width: 768px) {
+
   .testimonial-carousel::before,
   .testimonial-carousel::after {
     width: 200px;
@@ -526,6 +550,7 @@
 }
 
 @media (min-width: 992px) {
+
   .testimonial-carousel::before,
   .testimonial-carousel::after {
     width: 300px;
@@ -572,17 +597,20 @@
 /***contact us***/
 .contact-header {
   width: 100%;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
+  /* full viewport height */
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(20, 20, 31, 0.7)),
     url("../img/contactus.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* optional: gives nice parallax scroll effect */
+  background-attachment: fixed;
+  /* optional: gives nice parallax scroll effect */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /*** Footer ***/
 .footer .btn.btn-social {
   margin-right: 5px;
@@ -606,7 +634,7 @@
   display: block;
   margin-bottom: 5px;
   padding: 0;
-  text-align: left;
+  text-align: inherit;
   color: #ffffff;
   font-size: 15px;
   font-weight: normal;
@@ -647,4 +675,207 @@
   margin-right: 0;
   padding-right: 0;
   border-right: none;
+}
+
+/* ==========================================================================
+   COMPREHENSIVE RESPONSIVENESS OVERHAUL
+   ========================================================================== */
+
+/* 1. Fluid Typography (Clamp) & Global Spacing */
+/* ==========================================================================
+   COMPREHENSIVE RESPONSIVENESS OVERHAUL (Media Query Approach)
+   ========================================================================== */
+
+/* 1. Global Spacing & Typography Defaults (Desktop) */
+h1,
+.h1 {
+  font-size: 3.5rem !important;
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem !important;
+}
+
+h3,
+.h3 {
+  font-size: 2rem !important;
+}
+
+.section-title {
+  font-size: 1.5rem !important;
+}
+
+.container-xxl.py-5,
+.container-fluid.py-5 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* 2. Tablet Responsive (≤ 991px) */
+@media (max-width: 991px) {
+
+  h1,
+  .h1 {
+    font-size: 3rem !important;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.2rem !important;
+  }
+
+  .container-xxl.py-5,
+  .container-fluid.py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  /* Disable parallax */
+  .service-header,
+  .aboutus-header,
+  .hero-header,
+  .contact-header,
+  .booking {
+    background-attachment: scroll !important;
+    background-position: center top !important;
+  }
+
+  .hero-header,
+  .service-header,
+  .aboutus-header,
+  .contact-header {
+    height: 50vh;
+    min-height: 400px;
+  }
+
+  .hero-video-section {
+    height: 80vh;
+  }
+}
+
+/* 3. Mobile Responsive (≤ 576px) */
+@media (max-width: 576px) {
+
+  h1,
+  .h1 {
+    font-size: 2rem !important;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.75rem !important;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .section-title {
+    font-size: 1.2rem !important;
+  }
+
+  .container-xxl.py-5,
+  .container-fluid.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Dynamic plane sizing */
+  .plane {
+    width: 130px;
+  }
+
+  /* Prevent section title overflow */
+  .section-title::before,
+  .section-title::after {
+    display: none;
+  }
+
+  /* Safe header heights */
+  .hero-video-section {
+    height: 100dvh;
+  }
+}
+
+/* 4. Large Screen / Ultra-Wide Support (≥ 1600px) */
+@media (min-width: 1600px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1520px;
+    /* Wider container for large screens */
+  }
+
+  body {
+    font-size: 1.1rem;
+    /* Slightly larger text for readability on big monitors */
+  }
+
+  /* Scale up plane and elements */
+  .plane {
+    width: 180px;
+  }
+}
+
+/* 5. Component Responsiveness */
+
+/* Responsive Testimonial Images */
+.testimonial-item>img {
+  width: clamp(60px, 10vw, 100px) !important;
+  height: clamp(60px, 10vw, 100px) !important;
+}
+
+/* Responsive Process Icons */
+.process-step-icon,
+.position-relative .bg-primary.rounded-circle {
+  width: clamp(60px, 12vw, 100px) !important;
+  height: clamp(60px, 12vw, 100px) !important;
+}
+
+/* Logo resizing */
+@media (max-width: 400px) {
+  .navbar-light .navbar-brand img {
+    max-height: 60px;
+  }
+}
+
+/* 6. Utility Changes */
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Replace inline min-heights with class */
+.min-h-400 {
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .min-h-400 {
+    min-height: 300px;
+    /* Smaller on mobile */
+  }
+}
+
+.min-h-350 {
+  min-height: 350px;
+}
+
+@media (max-width: 768px) {
+  .min-h-350 {
+    min-height: 250px;
+    /* Smaller on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-title-fix {
+    font-size: 2.5rem !important;
+  }
 }
